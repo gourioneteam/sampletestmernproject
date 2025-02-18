@@ -12,7 +12,7 @@ function Login ({ setIsAuthenticated }) {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/auth/login',
+        'https://testbackend-gamma.vercel.app/api/auth/login',
         { username, password },
         { withCredentials: true }
       );
